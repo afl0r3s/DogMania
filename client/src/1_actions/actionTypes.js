@@ -1,0 +1,11 @@
+export const GET_BREEDS      = 'GET_BREEDS';
+export const GET_BREEDS_NAME = 'GET_BREEDS_NAME';
+export const ERROR_SEARCH    = 'ERROR_SEARCH';
+export const GET_DETAIL      = 'GET_DETAIL';
+export const FILTER_SOURCE   = 'FILTER_SOURCE';
+export const SORT_GENERAL    = 'SORT_GENERAL';
+export const SORT_WEIGHT     = 'SORT_WEIGHT';
+export const GET_TEMPERAMENTS= 'GET_TEMPERAMENTS';
+export const GET_BREEDTEMPERAMENT = 'GET_BREEDTEMPERAMENT';
+export const POST_BREED      = 'POST_BREED';
+export const LOADING         = 'LOADING';
