@@ -23,8 +23,24 @@ export const getTemperaments = () => {
 export const getBreeds = () => {
 	return async (dispatch) => {
 		dispatch({ type: LOADING})
-		var breedsInfo = await axios.get(`http://localhost:3001/dogs`);
-		return dispatch({ type: GET_BREEDS, payload: breedsInfo.data})
+		try {
+			var breedsInfo = await axios.get(`http://localhost:3001/dogs`);
+			return dispatch({ type: GET_BREEDS, payload: breedsInfo.data});
+		} catch (error) {
+			breedsInfo = [{
+				"id": 0,
+				"name": "No data response !!",
+				"temperament": "-- API Server down --",
+				"image": "http://localhost:3000/DogMania/sad_dog.png",
+				"weight_min": "0",
+				"weight_max": "0",
+				"height_min": "0",
+				"height_max": "0",
+				"origin": "API"
+			}]
+			return dispatch({ type: GET_BREEDS, payload: breedsInfo});
+		}
+		//console.log('Data:',breedsInfo)
 	}
 }
 

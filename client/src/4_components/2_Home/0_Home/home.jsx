@@ -20,7 +20,7 @@ export default function Home() {
 				<>
 					<Navsearch />
 					<div className={homeStyles.imgLoad}>
-						<img width="230" src="./PI-Doogs-FT15a/dog01.gif" alt="loading.."/>
+						<img width="230" src="./DogMania/dog01.gif" alt="loading.."/>
 					</div>
 				</> : 
 				<> 
