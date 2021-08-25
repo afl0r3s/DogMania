@@ -9,7 +9,7 @@ export default function Landing() {
                 <h1 data-text="Dog Mania">Dog Mania</h1>
                 <div className={styles.text}>The place for Dog lovers... </div>
                 <div className={styles.buttonConteiner}>
-                    <Link to={'/home'}> <button className={styles.button}>Go to Start &#187; </button> </Link> 
+                    <Link to={'/DogMania/home'}> <button className={styles.button}>Go to Start &#187; </button> </Link> 
                 </div>
                 <div className={styles.develop}>"Soy Henry" P.I. App<br/>Developed by Alejandro Flores</div>
             </div>
