@@ -4,7 +4,7 @@ import cardStyles from './card.module.css'
 
 export default function Card({id, image, name, temperament}) {
     return (
-        <Link to={`/detail/${id}`}>
+        <Link to={`/DogMania/detail/${id}`}>
             <div className={cardStyles.card}>
 				<img src={image} alt={name} />
 				<h4 className="breedName">	{name} </h4>

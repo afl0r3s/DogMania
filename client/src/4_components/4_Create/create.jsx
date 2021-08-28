@@ -115,7 +115,7 @@ export default function Create() {
     const handleClick = (e) => {
         e.preventDefault();
         dispatch(getBreeds());
-        history.push(`../home`);
+        history.push(`../DogMania/home`);
     }
 
     return (
@@ -123,8 +123,8 @@ export default function Create() {
             <nav className={styles.navNav}>
                 <span className={styles.navLogo}>Dog Mania App</span>
                 <ul className={styles.navMenu}>
-                    <li className={styles.navMenuItem}> <Link to={'/home'}> <span className={styles.navMenuLink} onClick={(e)=> handleClick(e)}> <i className="fa fa-home"></i> Home</span> </Link> </li>
-                    <li className={styles.navMenuItem}> <Link to={'/about'}> <span className={styles.navMenuLink} > <i className="fa fa-info"></i> About</span> </Link> </li>
+                    <li className={styles.navMenuItem}> <Link to={'./home'}> <span className={styles.navMenuLink} onClick={(e)=> handleClick(e)}> <i className="fa fa-home"></i> Home</span> </Link> </li>
+                    <li className={styles.navMenuItem}> <Link to={'./about'}> <span className={styles.navMenuLink} > <i className="fa fa-info"></i> About</span> </Link> </li>
                 </ul>
             </nav>
             <div className={styles.tittle}>

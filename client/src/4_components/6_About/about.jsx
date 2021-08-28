@@ -12,7 +12,7 @@ export default function About() {
     const handleClick = (e) => {
         e.preventDefault();
         dispatch(getBreeds());
-        history.push(`../home`);
+        history.push(`../DogMania/home`);
     }
 
     return (
@@ -20,7 +20,7 @@ export default function About() {
             <nav className={styles.navNav}>
                 <span className={styles.navLogo}>Dog Mania App</span>
                 <ul className={styles.navMenu}>
-                    <li className={styles.navMenuItem}> <Link to={'/home'}> <span className={styles.navMenuLink} onClick={(e)=> handleClick(e)}> <i className="fa fa-home"></i> Home</span> </Link> </li>
+                    <li className={styles.navMenuItem}> <Link to={'/DogMania/home'}> <span className={styles.navMenuLink} onClick={(e)=> handleClick(e)}> <i className="fa fa-home"></i> Home</span> </Link> </li>
                 </ul>
             </nav>
             <div className={styles.tittle}>

@@ -20,9 +20,9 @@ export default function Navsearch() {
             <span className={navSrchStyles.navLogo}>Dog Mania App</span>
             <span className={navSrchStyles.navSearch}> <Search /> </span>
                 <ul className={navSrchStyles.navMenu}>
-                    <li className={navSrchStyles.navMenuItem}> <Link to={'/home'}> <span className={navSrchStyles.navMenuLink} onClick={(e)=> handleClick(e)}> <i className="fa fa-home"></i> Home</span> </Link> </li>
-                    <li className={navSrchStyles.navMenuItem}> <Link to={'/about'}> <span className={navSrchStyles.navMenuLink} > <i className="fa fa-info"></i> About</span> </Link> </li>
-                    <li className={navSrchStyles.navMenuItem}> <Link to={'/add'}> <span className={navSrchStyles.navMenuLink} > <i className="fa fa-paw"></i> Create</span> </Link> </li>
+                    <li className={navSrchStyles.navMenuItem}> <Link to={'/DogMania/home'}> <span className={navSrchStyles.navMenuLink} onClick={(e)=> handleClick(e)}> <i className="fa fa-home"></i> Home</span> </Link> </li>
+                    <li className={navSrchStyles.navMenuItem}> <Link to={'/DogMania/about'}> <span className={navSrchStyles.navMenuLink} > <i className="fa fa-info"></i> About</span> </Link> </li>
+                    <li className={navSrchStyles.navMenuItem}> <Link to={'/DogMania/add'}> <span className={navSrchStyles.navMenuLink} > <i className="fa fa-paw"></i> Create</span> </Link> </li>
                 </ul>
         </nav>
     )
