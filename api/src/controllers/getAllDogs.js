@@ -2,7 +2,8 @@ require('dotenv').config();
 const { Dog, Temperament } = require('../db');
 const axios = require('axios');
 const { BASE_URL, SEARCH_URL } = require('../../constants');
-const { API_KEY } = process.env;
+//const { API_KEY } = process.env;
+const API_KEY="49db5f54-2644-451b-a0e8-bf79ce242639"
 const { Op } = require('sequelize');
 
 async function getAllDogs(req, res, next) {
