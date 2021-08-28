@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DogMania/static/css/main.83c19bbe.chunk.css",
-    "main.js": "/DogMania/static/js/main.1d41769d.chunk.js",
-    "main.js.map": "/DogMania/static/js/main.1d41769d.chunk.js.map",
+    "main.js": "/DogMania/static/js/main.46a6ec10.chunk.js",
+    "main.js.map": "/DogMania/static/js/main.46a6ec10.chunk.js.map",
     "runtime-main.js": "/DogMania/static/js/runtime-main.4a796ce0.js",
     "runtime-main.js.map": "/DogMania/static/js/runtime-main.4a796ce0.js.map",
     "static/js/2.25aad5f5.chunk.js": "/DogMania/static/js/2.25aad5f5.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.4a796ce0.js",
     "static/js/2.25aad5f5.chunk.js",
     "static/css/main.83c19bbe.chunk.css",
-    "static/js/main.1d41769d.chunk.js"
+    "static/js/main.46a6ec10.chunk.js"
   ]
 }
