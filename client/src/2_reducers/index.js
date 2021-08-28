@@ -130,22 +130,6 @@ function rootReducer(state = initialState, action) {
 		default: {
 			return state;		
 		}
-		
-		/*
-		case SORT_WEIGHT:
-			var sortArray2 = state.breedsAll;
-			if(action.payload === 'ALL' ) sortArray2.sort((a,b) => a.id - b.id )
-			else if(action.payload === 'MoreLess') sortArray2.sort((a,b) => b.weight_min - a.weight_min )
-			else sortArray2.sort((a,b) => a.weight_min - b.weight_min )
-			return {
-				...state,
-				loading: false,
-				errorSearch: false,
-				breeds: sortArray2,
-				totalPages: Math.ceil(sortArray2.length / state.breedsPerPage[0]),
-			};
-		*/
-
 	}
 };
 

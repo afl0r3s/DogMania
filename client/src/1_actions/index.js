@@ -13,9 +13,11 @@ import {
 	LOADING ,
 } from './actionTypes';
 
+const BASE_URL = 'https://afs-test2.herokuapp.com'
+
 export const getTemperaments = () => {
 	return async (dispatch) => {
-		var temperamentsInfo = await axios.get(`http://localhost:3001/temperament`);
+		var temperamentsInfo = await axios.get(`${BASE_URL}/temperament`);
 		return dispatch({ type: GET_TEMPERAMENTS, payload: temperamentsInfo.data})
 	}
 }
@@ -24,7 +26,7 @@ export const getBreeds = () => {
 	return async (dispatch) => {
 		dispatch({ type: LOADING})
 		try {
-			var breedsInfo = await axios.get(`http://localhost:3001/dogs`);
+			var breedsInfo = await axios.get(`${BASE_URL}/dogs`);
 			return dispatch({ type: GET_BREEDS, payload: breedsInfo.data});
 		} catch (error) {
 			breedsInfo = [{
@@ -47,7 +49,7 @@ export const getBreeds = () => {
 export const getBreedsName = (nameBreed) => {
 	return async (dispatch) => {
 		dispatch({ type: LOADING})
-		var breedsInfo2 = await axios.get(`http://localhost:3001/dogs?name=${nameBreed}`);
+		var breedsInfo2 = await axios.get(`${BASE_URL}/dogs?name=${nameBreed}`);
 		if(breedsInfo2.data[0].id === 0){
 			return dispatch({ type: ERROR_SEARCH, payload: [{id:0, name:'WarnError'}]})
 			
@@ -61,7 +63,7 @@ export const getBreedsName = (nameBreed) => {
 export const getDetail = (id) => {
 	return async (dispatch) => {
 		dispatch({ type: LOADING})
-		var breedsInfo = await axios.get(`http://localhost:3001/dogs/${id}`);
+		var breedsInfo = await axios.get(`${BASE_URL}/dogs/${id}`);
 		return dispatch({ type: GET_DETAIL, payload: breedsInfo.data})
 
 	}
@@ -91,7 +93,7 @@ export const sortAlphabetic = (payload) => {
 
 export const postBreed = (payload) => {
 	return async (dispatch) => {
-		var response = await axios.post(`http://localhost:3001/dog`, payload);
+		var response = await axios.post(`${BASE_URL}/dog`, payload);
 		return dispatch({ type: POST_BREED, payload: response})
 	}
 }
